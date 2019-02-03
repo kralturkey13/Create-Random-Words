@@ -1,0 +1,45 @@
+import random
+vowels=['a','e','i','o','u']
+consonants=['b','c','d','f','g','h','j','k','l','m','n','p','r','s','t','v','y','z','x','w']
+random1=[]
+random2=[]
+random3=[]
+random4=[]
+random5=[]
+print("for vowels enter 'v', for consonants enter'c': ")
+print("suggestion: 'vccvv','cvcvc','cvccv' gives cool words.")
+key=input()
+for i in range(5):
+  for j in range(5):
+    if (key[j]=='v'):
+      if (i==0):
+        random1.append(random.choice(vowels))
+      if (i==1):
+        random2.append(random.choice(vowels))
+      if (i==2):
+        random3.append(random.choice(vowels))
+      if (i==3):
+        random4.append(random.choice(vowels))
+      if (i==4):
+        random5.append(random.choice(vowels))
+    if (key[j]=='c'):
+      if (i==0):
+        random1.append(random.choice(consonants))
+      if (i==1):
+        random2.append(random.choice(consonants))
+      if (i==2):
+        random3.append(random.choice(consonants))
+      if (i==3):
+        random4.append(random.choice(consonants))
+      if (i==4):
+        random5.append(random.choice(consonants))
+word1=random1[0]+random1[1]+random1[2]+random1[3]+random1[4]
+word2=random2[0]+random2[1]+random2[2]+random2[3]+random2[4]
+word3=random3[0]+random3[1]+random3[2]+random3[3]+random3[4]
+word4=random4[0]+random4[1]+random4[2]+random4[3]+random4[4]
+word5=random5[0]+random5[1]+random5[2]+random5[3]+random5[4]
+print(word1)
+print(word2)
+print(word3)
+print(word4)
+print(word5)
